@@ -1,26 +1,118 @@
 /* Write your CSS here */
+/* General styling */
 .bg-container {
-  background-color: #ffc2a0;
-  height: 100vh;
-  width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
 }
+
+/* Card styling */
 .card {
-  height: 90vh;
-  width: 90vw;
-  background-color: #ffffff;
-  border-radius: 9px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  outline: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
 }
+
+/* Heading */
 .heading {
-  color: #ff8542;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Input and button container */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Todo List */
+.list-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Completed Todo */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Buttons */
+.todo-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.todo-item button:hover {
+  background-color: #cc0000;
+}
+
+/* Edit and Save button */
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+/* Checkbox styling */
+input[type='checkbox'] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  cursor: pointer;
 }

@@ -1,20 +1,73 @@
-/* Write your CSS here */
-.item-details {
+/* Todo Item Container */
+.todo-item {
   display: flex;
-  flex-direction: row;
-}
-.btn {
+  align-items: center;
+  justify-content: space-between;
   background-color: #ffffff;
-  color: #ff0b37;
-  font-family: 'Roboto';
-  font-size: 12px;
+  padding: 10px;
+  margin-bottom: 8px;
   border-radius: 8px;
-  border: 1px solid #ff0b37;
-  padding-top: 4px;
-  padding-left: 8px;
-  padding-bottom: 4px;
-  padding-right: 8px;
-  margin-left: 16px;
-  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+/* Checkbox */
+.todo-item input[type='checkbox'] {
+  transform: scale(1.2);
+  margin-right: 10px;
   cursor: pointer;
+}
+
+/* Todo Text */
+.todo-item p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+/* Completed Todo (strikethrough effect) */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Input Field for Editing */
+.todo-item input[type='text'] {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Buttons */
+.todo-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+.todo-item button:hover {
+  background-color: #cc0000;
+}
+
+/* Edit and Save Button */
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
 }
